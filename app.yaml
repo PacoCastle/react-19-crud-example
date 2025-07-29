@@ -1,0 +1,38 @@
+runtime: python312
+
+# For static files, we don't need any server-side logic
+# This is a simple static file server configuration
+
+handlers:
+  # Handle all static files
+  - url: /static
+    static_dir: build/static
+    secure: always
+
+  # Handle the favicon
+  - url: /favicon.ico
+    static_files: build/favicon.ico
+    upload: build/favicon.ico
+    secure: always
+
+  # Handle the manifest.json
+  - url: /manifest.json
+    static_files: build/manifest.json
+    upload: build/manifest.json
+    secure: always
+
+  # Handle robots.txt
+  - url: /robots.txt
+    static_files: build/robots.txt
+    upload: build/robots.txt
+    secure: always
+
+  # All other routes should serve index.html for client-side routing
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
+    secure: always
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 10
