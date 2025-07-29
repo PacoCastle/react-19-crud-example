@@ -1,23 +1,63 @@
-# Getting Started with Create React App
+# React 19 CRUD Example 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A complete **React 19.1.1** application showcasing modern React development with full CRUD operations, Docker containerization, and Google Cloud Platform deployment.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **React 19.1.1** - Latest React version with cutting-edge features
+- **Modern Architecture** - Functional components with hooks
+- **Docker Support** - Multi-stage builds for production optimization
+- **GCP Deployment** - App Engine, Cloud Run, and Kubernetes ready
+- **Production Ready** - Nginx configuration with security headers
+- **Comprehensive Documentation** - Complete guides for all aspects
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Production**: [https://my-first-react-app-467321.uc.r.appspot.com](https://my-first-react-app-467321.uc.r.appspot.com)
+- **Local Docker**: `http://localhost:8080` (or auto-detected port)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Prerequisites
 
-### `npm test`
+- **Node.js 20+**
+- **Docker** (for containerization)
+- **Google Cloud CLI** (for GCP deployment)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Quick Start
+
+### Local Development
+```bash
+# Clone the repository
+git clone https://github.com/PacoCastle/react-19-crud-example.git
+cd react-19-crud-example
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+### Docker Deployment
+```bash
+# Build and run with automatic port conflict resolution
+./deploy-docker.ps1
+
+# Manual Docker build
+docker build -t react-19-crud .
+docker run -p 8080:8080 react-19-crud
+```
+
+### Google Cloud Platform
+```bash
+# Deploy to App Engine
+gcloud app deploy
+
+# Deploy to Cloud Run
+gcloud run deploy react-19-crud --source .
+
+# Deploy to Kubernetes
+kubectl apply -f k8s/
+```
 
 ### `npm run build`
 
