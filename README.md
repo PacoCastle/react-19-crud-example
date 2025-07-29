@@ -13,7 +13,7 @@ A complete **React 19.1.1** application showcasing modern React development with
 
 ## 🚀 Live Demo
 
-- **Production**: [https://my-first-react-app-467321.uc.r.appspot.com](https://my-first-react-app-467321.uc.r.appspot.com)
+- **Production**: [https://react-19-crud-example-467321.uc.r.appspot.com](https://react-19-crud-example-467321.uc.r.appspot.com)
 - **Local Docker**: `http://localhost:8080` (or auto-detected port)
 
 ## 📋 Prerequisites

@@ -10,7 +10,7 @@
 
 ### Production Deployment
 - **GCP App Engine**: ✅ **DEPLOYED AND RUNNING**
-- **Production URL**: https://my-first-react-app-467321.uc.r.appspot.com
+- **Production URL**: https://react-19-crud-example-467321.uc.r.appspot.com
 - **Status**: Active and accessible
 
 ## 📋 What We Built
@@ -91,7 +91,7 @@ kubectl apply -f k8s/
 ## 📁 Project Structure
 
 ```
-my-first-react-app/
+react-19-crud-example/
 ├── src/                    # React source code
 ├── public/                 # Static assets
 ├── build/                  # Production build (created during build)
@@ -130,7 +130,7 @@ my-first-react-app/
 
 ## 🌐 Live Applications
 
-1. **Production**: https://my-first-react-app-467321.uc.r.appspot.com
+1. **Production**: https://react-19-crud-example-467321.uc.r.appspot.com
 2. **Local Docker**: http://localhost:58583
 3. **Development**: http://localhost:3000 (when running `npm start`)
 

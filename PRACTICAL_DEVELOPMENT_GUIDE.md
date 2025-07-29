@@ -4,7 +4,7 @@
 
 ### Project File Structure for Extensions
 ```
-my-first-react-app/
+react-19-crud-example/
 ├── src/
 │   ├── components/          # Reusable UI components
 │   ├── pages/              # Page-level components

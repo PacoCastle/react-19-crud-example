@@ -42,7 +42,7 @@ gcloud init
 gcloud auth login
 
 # Set your project (you'll need to create one first)
-gcloud config set project my-first-react-app-467321
+gcloud config set project react-19-crud-example-467321
 ```
 
 ---
@@ -66,12 +66,12 @@ gcloud services enable containerregistry.googleapis.com
 
 # Option B: Manual deployment
 # Build and push Docker image
-docker build -t gcr.io/my-first-react-app-467321/react-app .
-docker push gcr.io/my-first-react-app-467321/react-app
+docker build -t gcr.io/react-19-crud-example-467321/react-app .
+docker push gcr.io/react-19-crud-example-467321/react-app
 
 # Deploy to Cloud Run
 gcloud run deploy react-app `
-  --image gcr.io/my-first-react-app-467321/react-app `
+  --image gcr.io/react-19-crud-example-467321/react-app `
   --platform managed `
   --region us-central1 `
   --allow-unauthenticated `
@@ -97,7 +97,7 @@ gcloud run services describe react-app --platform managed --region us-central1 -
 ### Step 1: Create a Google Cloud Project
 1. Go to https://console.cloud.google.com/
 2. Click "Create Project"
-3. Enter a project name (e.g., "my-first-react-app")
+3. Enter a project name (e.g., "react-19-crud-example")
 4. Note the Project ID (it will be auto-generated)
 
 ### Step 2: Enable App Engine API
@@ -115,7 +115,7 @@ From your React app directory, run:
 
 ```powershell
 # Make sure you're in the right directory
-Set-Location "c:\GitHubClean\React\my-first-react-app"
+Set-Location "c:\GitHubClean\React\react-19-crud-example"
 
 # Deploy to App Engine
 gcloud app deploy
@@ -154,8 +154,8 @@ gcloud container clusters get-credentials react-cluster --zone us-central1-a
 ### Step 3: Build and Push Image
 ```powershell
 # Build and push Docker image
-docker build -t gcr.io/my-first-react-app-467321/react-app .
-docker push gcr.io/my-first-react-app-467321/react-app
+docker build -t gcr.io/react-19-crud-example-467321/react-app .
+docker push gcr.io/react-19-crud-example-467321/react-app
 ```
 
 ### Step 4: Deploy to Kubernetes
@@ -212,7 +212,7 @@ gcloud compute backend-buckets create react-app-backend --gcs-bucket-name=my-rea
 ```powershell
 # Create Cloud Build trigger
 gcloud builds triggers create github `
-  --repo-name="my-first-react-app" `
+  --repo-name="react-19-crud-example" `
   --repo-owner="YOUR_GITHUB_USERNAME" `
   --branch-pattern="^main$" `
   --build-config="cloudbuild.yaml"

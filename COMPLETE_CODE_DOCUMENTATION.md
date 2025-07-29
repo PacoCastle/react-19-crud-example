@@ -3,7 +3,7 @@
 ## Project Structure Overview
 
 ```
-my-first-react-app/
+react-19-crud-example/
 ├── public/                  # Static assets and HTML template
 │   ├── index.html          # Main HTML template
 │   ├── favicon.ico         # Website icon

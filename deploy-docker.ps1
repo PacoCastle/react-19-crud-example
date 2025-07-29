@@ -5,7 +5,7 @@
 
 param(
     [Parameter(Mandatory=$false)]
-    [string]$ProjectId = "my-first-react-app-467321",
+    [string]$ProjectId = "react-19-crud-example-467321",
     
     [Parameter(Mandatory=$false)]
     [string]$Region = "us-central1",

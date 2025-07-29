@@ -6,16 +6,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>React 19 CRUD Example</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          A modern React 19.1.1 application with Docker and GCP deployment.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/PacoCastle/react-19-crud-example"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          View on GitHub
         </a>
       </header>
     </div>

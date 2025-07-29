@@ -12,7 +12,7 @@
 ```powershell
 gcloud app deploy
 ```
-**Result:** https://my-first-react-app-467321.appspot.com
+**Result:** https://react-19-crud-example-467321.appspot.com
 
 ### 🖥️ Local Testing
 ```powershell

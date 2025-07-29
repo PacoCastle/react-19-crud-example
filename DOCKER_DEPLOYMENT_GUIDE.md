@@ -22,7 +22,7 @@ docker-compose --version
 ## 🏗️ Project Structure for Docker
 
 ```
-my-first-react-app/
+react-19-crud-example/
 ├── Dockerfile              # Multi-stage Docker build
 ├── .dockerignore           # Files to exclude from Docker context
 ├── nginx.conf              # Nginx configuration for production
@@ -87,7 +87,7 @@ server {
 ### 1. Build the Docker Image
 ```powershell
 # Build the image
-docker build -t my-react-app .
+docker build -t react-19-crud-example .
 
 # Build with specific tag
 docker build -t my-react-app:v1.0.0 .
@@ -191,7 +191,7 @@ docker-compose up --build
 #### Option A: Deploy from Local Machine
 ```powershell
 # Set your project ID
-$PROJECT_ID = "my-first-react-app-467321"
+$PROJECT_ID = "react-19-crud-example-467321"
 
 # Build and push to Google Container Registry
 docker build -t gcr.io/$PROJECT_ID/react-app .
@@ -321,7 +321,7 @@ images:
 ```powershell
 # Connect repository and create trigger
 gcloud builds triggers create github `
-  --repo-name="my-first-react-app" `
+  --repo-name="react-19-crud-example" `
   --repo-owner="YOUR_GITHUB_USERNAME" `
   --branch-pattern="^main$" `
   --build-config="cloudbuild.yaml"
